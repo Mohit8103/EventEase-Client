@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-r from-black via-blue-800 to-black shadow-lg text-white py-8 ">
+    <footer className="w-full bg-black/50 backdrop-blur-md shadow-lg text-white py-8 ">
       <div className="max-w-7xl mx-auto  px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         
         {/* Brand Info */}
@@ -29,7 +29,7 @@ export default function Footer() {
         {/* Social Media */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-yellow-300">Follow Us</h3>
-          <div className="flex justify-center md:justify-start space-x-4">
+          <div className="flex flex-col space-y-2">
             <a href="#" className="hover:text-yellow-300 transition">Facebook</a>
             <a href="#" className="hover:text-yellow-300 transition">Twitter</a>
             <a href="#" className="hover:text-yellow-300 transition">Instagram</a>

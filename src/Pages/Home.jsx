@@ -22,7 +22,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-black via-blue-800 to-black shadow-lg">
+    <div className="w-full">
          <ToastContainer autoClose={3000} position="top-right"/>
       <HeroSectionOne />
       <FeaturesSection />

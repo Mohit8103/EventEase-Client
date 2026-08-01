@@ -11,7 +11,7 @@ export function HeroSectionOne() {
   const user = useSelector((state) => state.auth.user);
  
   return (
-    <div className="relative mx-auto flex max-w-8xl flex-col items-center justify-center bg-gradient-to-r from-black via-blue-800 to-black">
+    <div className="relative mx-auto flex max-w-8xl flex-col items-center justify-center bg-transparent">
       {/* Grid Lines (Decorations) */}
       <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
         <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
@@ -125,7 +125,7 @@ export function FeaturesSection() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 -mt-2 sm:grid-cols-2 lg:grid-cols-4 relative z-10 px-6 sm:px-8 md:px-16 lg:px-20 xl:px-28 py-8 sm:py-10 max-w-8xl mx-auto bg-gradient-to-r from-black via-blue-800 to-black">
+    <div className="grid grid-cols-1 -mt-2 sm:grid-cols-2 lg:grid-cols-4 relative z-10 px-6 sm:px-8 md:px-16 lg:px-20 xl:px-28 py-8 sm:py-10 max-w-8xl mx-auto bg-transparent">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

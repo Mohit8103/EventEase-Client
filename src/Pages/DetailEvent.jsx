@@ -243,8 +243,8 @@ return (
 
     {/* Booking Modal */}
     {open && (
-      <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
-        <div className="bg-white rounded-2xl shadow-xl p-6 w-96">
+      <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
+        <div className="bg-white rounded-2xl shadow-xl p-6 w-96 text-slate-800">
           <h2 className="text-xl font-bold mb-4">Book Tickets</h2>
           {/* Seats input */}
           <label className="block mb-2 text-slate-700 font-medium">
@@ -256,7 +256,7 @@ return (
             max={AvailableSeats}
             value={seats}
             onChange={(e) => setSeats(Number(e.target.value))}
-            className="border rounded-lg px-3 py-2 w-full mb-4"
+            className="border border-gray-300 bg-white text-slate-800 rounded-lg px-3 py-2 w-full mb-4 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
           />
           {/* Wallet Points */}
           <div className="flex items-center">

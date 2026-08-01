@@ -45,7 +45,7 @@ function App() {
 
 
   return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-gradieent-to r from-black via-blue-800 to-black">
+    <div className="min-h-screen flex flex-wrap content-between bg-[url(/bg-image.jpg)] bg-cover bg-fixed bg-center bg-black/40 bg-blend-overlay text-white">
       <div className="w-full">
         <Header/>
         <ScrollToTop />

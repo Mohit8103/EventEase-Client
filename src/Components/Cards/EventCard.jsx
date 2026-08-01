@@ -14,8 +14,8 @@ export function EventCard({
     <div className="max-w-xs w-full group/card">
       <div
         className={cn(
-          "cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4",
-          "bg-cover bg-center"
+          "cursor-pointer overflow-hidden relative card h-96 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] max-w-sm mx-auto flex flex-col justify-between p-4",
+          "bg-cover bg-center transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(253,224,71,0.2)]"
         )}
         style={{
           backgroundImage: `url(${image || "https://via.placeholder.com/300"})`,
